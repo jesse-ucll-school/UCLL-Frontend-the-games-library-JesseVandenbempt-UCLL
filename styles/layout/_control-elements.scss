@@ -1,0 +1,35 @@
+@use "../utils/vars" as vars;
+@use "../utils/colors" as colors;
+
+button {
+    border: none;
+
+    background-color: vars.$background-secondary;
+    color: vars.$background;
+
+    padding: vars.$space-small vars.$space-medium;
+
+    &:hover {
+        background-color: colors.tint(vars.$background-secondary, 15%);
+    }
+}
+
+input {
+
+    color: vars.$text-color;
+
+    padding: vars.$space-small 0 vars.$space-small vars.$space-small;
+
+    background-color: #0000004F;
+    border: none;
+    filter: blur(100%);
+
+    &[type="submit"] {
+        background-color: vars.$background-secondary;
+        padding: vars.$space-small vars.$space-medium;
+    }
+    
+    &:focus {
+        outline: 1px solid vars.$background-secondary;
+    }
+}

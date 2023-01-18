@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="images/logo.ico">
+
+    <script src="js/dom.js"></script>
+    <script src="js/fetch-helper.js"></script>
+    <script src="js/add-games.js" defer></script>
+    
+    <link type="text/css" href="styles/normalize.css" rel="stylesheet">
+    <link type="text/css" href="styles/style.css" rel="stylesheet">
+
+    <title>My Games</title>
+  </head>
+  <body>
+    <div class="background glow"></div>
+    <div id="container">
+      <header>
+        <img src="images/banner-image.jpg" alt="Xbox series x banner" class="banner">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="overview.html">Overview</a>
+            </li>
+            <li>
+              <a href="table-overview.html">Table Overview</a>
+            </li>
+            <li class="actual">
+                <a href="add-games.html">Add Games</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Add a game</h2>
+        <form id="add-game-form">
+          <label for="name">Name:</label>
+          <input name="name" id="name" type="text">
+
+          <label for="type">Type:</label>
+          <input name="type" id="type" type="text">
+
+          <label for="rating">Rating:</label>
+          <input name="rating" id="rating" type="number">
+          
+          <input id="submit" type="submit" value="Add Game" aria-label="submit">
+        </form>
+        <div id="status"></div>
+      </main>
+      <footer>Jesse Vandenbempt: Front-end - 2022</footer>
+    </div>
+  </body>
+</html>

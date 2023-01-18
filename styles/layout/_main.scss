@@ -1,0 +1,17 @@
+@use "../utils/vars" as vars;
+
+main {
+    
+    div#status {
+
+        .ok {
+            color: vars.$green;
+        }
+    
+        .error {
+            color: vars.$red;
+        }
+    
+    }
+
+}

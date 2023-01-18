@@ -1,0 +1,19 @@
+@use "sass:math";
+
+@function set-alpha($color, $alpha) {
+    @return rgba(red($color), green($color), blue($color), $alpha);
+}
+
+@function shade($color, $percent) {
+    $percent-float: math.div($percent, 100%);
+    @return rgb(calc(red($color)    * (1 - $percent-float)), 
+                calc(green($color)  * (1 - $percent-float)), 
+                calc(blue($color)   * (1 - $percent-float)));
+}
+
+@function tint($color, $percent) {
+    $percent-float: math.div($percent, 100%);
+    @return rgb(calc(red($color)    + (255 - red($color))   * $percent-float), 
+                calc(green($color)  + (255 - green($color)) * $percent-float), 
+                calc(blue($color)   + (255 - blue($color))  * $percent-float));
+}

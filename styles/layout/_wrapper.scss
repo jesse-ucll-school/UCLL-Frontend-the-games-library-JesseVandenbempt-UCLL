@@ -1,0 +1,22 @@
+@use "../utils/vars" as vars;
+
+div.wrapper {
+
+    display: flex;
+    margin: vars.$space-medium 0;
+
+    div.wrapper {
+        margin: vars.$space-small 0;
+    }
+    
+    gap: vars.$space-small;
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+}

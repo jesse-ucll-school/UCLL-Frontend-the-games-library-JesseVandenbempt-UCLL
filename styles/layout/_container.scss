@@ -1,0 +1,11 @@
+@use "../utils/vars" as vars;
+
+div#container {
+    max-width: 900px;
+
+    margin: vars.$space-small;
+
+    @media screen and (min-width: vars.$medium-screen) {
+        margin: auto;
+    }
+}

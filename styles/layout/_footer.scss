@@ -1,0 +1,8 @@
+@use "../utils/vars" as vars;
+
+footer {
+    padding: vars.$space-small;
+
+    color: vars.$background;
+    background-color: vars.$background-secondary;
+}

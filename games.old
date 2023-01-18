@@ -1,0 +1,9 @@
+// const games = [
+//     { name: "Hitman 3", type: "Stealth, Sandbox", rating: 10.0, favourite: true },
+//     { name: "Dying Light 2", type: "Survival, Parkour", rating: 8.0, favourite: true },
+//     { name: "Ghost Recon: Wildlands", type: "FPS, Shooter, Stealth", rating: 9.0, favourite: false },
+//     { name: "Ark: Survival Evolved", type: "Survival, Adventure", rating: 8.5, favourite: false },
+//     { name: "Destiny 2", type: "FPS, Shooter, RPG", rating: 9.5, favourite: true },
+//     { name: "Phasmaphobia", type: "Horror", rating: 9, favourite: false },
+//     { name: "Escape Simulator", type: "Puzzle, Simulation, Casual", rating: 9.5, favourite: true },
+// ];

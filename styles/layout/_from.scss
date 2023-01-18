@@ -1,0 +1,16 @@
+@use "../utils/vars" as vars;
+
+form {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: vars.$space-medium;
+
+    margin: vars.$space-medium;
+
+    input[type="submit"] {
+        grid-column: 1 / span 2;
+
+        margin: 0 vars.$space-small;
+    }
+}

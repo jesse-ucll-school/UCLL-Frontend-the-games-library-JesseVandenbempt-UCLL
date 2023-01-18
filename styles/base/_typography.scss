@@ -1,0 +1,75 @@
+@use "../utils/vars" as vars;
+@use "../utils/colors" as colors;
+
+:root {
+    background-color: vars.$background;
+    color: vars.$text-color;
+
+    font-family: vars.$sans-serif, sans-serif;
+    font-size: vars.$font-size-for-small;
+    font-weight: vars.$font-weight;
+    line-height: vars.$line-height;
+
+    @media screen and (min-width: vars.$medium-screen) {
+
+        font-size: vars.$font-size-for-medium;
+        
+    }
+}
+
+body {
+    position: relative;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+h4 {
+    font-size: 1.05rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.secondary:is(h1, h2, h3, h4, h5, h6) {
+    color: vars.$text-color-secondary;
+}
+
+time {
+
+    display: block;
+
+    font-size: small;
+
+    text-align: right;
+
+    text-transform: lowercase;
+}
+
+img + time {
+    margin: 0 0 20px 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: vars.$text-color;
+}
+
+a:visited {
+    background-color: colors.tint(vars.$background-secondary, 40%);
+}

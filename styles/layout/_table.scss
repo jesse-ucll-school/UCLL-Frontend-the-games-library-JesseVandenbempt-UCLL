@@ -1,0 +1,41 @@
+@use "../utils/vars" as vars;
+@use "../utils/colors" as colors;
+
+table, th, td {
+    border: 1px solid colors.set-alpha(vars.$text-color, 40%);
+    border-collapse: collapse;
+}
+
+table {
+
+    width: max-content;
+
+    th {
+        border-color: colors.shade(vars.$background-secondary, 40%);
+        color: vars.$background;
+        background-color: vars.$background-secondary;
+        text-transform: uppercase;
+    }
+
+    th, td {
+        padding: vars.$space-small vars.$space-medium;
+        cursor: default;
+    }
+
+    tbody {
+        tr.hover {
+            background-color: #ffffff2F;
+        }
+    }
+
+    tr:nth-child(2n+1) {
+
+        background-color: #5a5a5a18;
+
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+}

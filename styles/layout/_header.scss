@@ -1,0 +1,60 @@
+@use "../utils/vars" as vars;
+@use "../utils/colors" as colors;
+
+header {
+
+    img.banner { 
+
+        max-width: 100%;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: vars.$space-small 0;
+            list-style: none;
+
+            gap: vars.$space-small;
+
+            li {
+                flex-grow: 1;
+
+                a:link, a:visited {
+                    display: block;
+
+                    color: vars.$background;
+                    background-color: vars.$background-secondary;
+
+                    text-align: center;
+                    padding: vars.$space-small 0;
+
+                    transition: background ease 100ms;
+                }
+
+                a:hover {
+                    background-color: colors.tint(vars.$background-secondary, 15%);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: vars.$medium-screen) {
+
+        text-align: center;
+
+        img.banner {
+
+            width: 800px;
+            height: 400px;
+
+            margin: vars.$space-large;
+
+            object-fit: cover;
+
+        }
+
+    }
+
+}
